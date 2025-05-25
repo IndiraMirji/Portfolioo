@@ -1,0 +1,238 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+}
+
+/* Navbar */
+.mainav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.mainav li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 17px;
+}
+
+.mainav li:hover {
+  color: #b6d733;
+}
+
+.navButton {
+  background-color: #5d29f7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  left: 200px;
+  font-size: 15px;
+}
+
+/* Hero Section */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 200px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 60px;
+}
+
+.container p {
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+/* Hero Buttons */
+.heroButtons {
+  margin-left: 70px;
+}
+
+.heroButtons .button1,
+.heroButtons .button2 {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.heroButtons .button1 {
+  background-color: #b6d733;
+}
+
+.heroButtons .button2 {
+  background-color: #5d29f7;
+  margin-left: 20px;
+}
+
+/* Academics Section */
+.academics-container h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.academics-container {
+  text-align: center;
+}
+
+.academics-content {
+  position: relative;
+  left: 200px;
+}
+
+.academics-content li {
+  list-style: none;
+  padding: 20px;
+  font-size: 16px;
+  position: relative;
+  bottom: 450px;
+  left: 70px;
+}
+
+.academics-content span {
+  position: relative;
+  right: 400px;
+}
+
+/* Skills Section */
+.skills-container {
+  position: relative;
+  bottom: 250px;
+}
+
+.skills-container h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box1, .box2, .box3 {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(7, 7, 7);
+  border-radius: 50px;
+  border: 1px solid #5d29f7;
+  padding: 20px;
+}
+
+.box1 h4, .box2 h4, .box3 h4 {
+  font-size: 20px;
+}
+
+/* About Me */
+.container{
+  display: flex;
+  
+}
+.container h1{
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mainav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .mainav li {
+    margin: 10px 0;
+  }
+
+  .navButton {
+    position: static;
+    margin-top: 10px;
+    left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+
+  .heroButtons {
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroButtons .button1,
+  .heroButtons .button2 {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .academics-content {
+    left: 0;
+    bottom: 0;
+    padding: 0 20px;
+  }
+
+  .academics-content li {
+    left: 0;
+    bottom: 0;
+    text-align: left;
+  }
+
+  .academics-content span {
+    right: 0;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    margin: 20px 0;
+    width: 90%;
+  }
+
+  .p-about {
+    left: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
